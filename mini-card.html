@@ -1,0 +1,130 @@
+<!-- minimal blog card -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <title>Minimal blog card</title>
+    <style>
+        :root {
+            --morado-de-letras: #883AE1;
+            --fondo-desing: #E6D6FC;
+            --fondo: #FAFAF9;
+            --cart: #ffffff;
+            --letras: #6C727F;
+            --titulo: #20293A;
+            --xl: 18px;
+            --l: 14px;
+            --m: 12px;
+            --s: 10px;
+        }
+
+        body {
+            font-family: 'Sora';
+            display: flex;
+            /* flex-direction: row; */
+            justify-content: center;
+            background-color: var(--fondo);
+        }
+
+        .contenedor {
+            display: flex;
+            flex-direction: column;
+            width: 368px;
+            height: 363px;
+            background-color: var(--cart);
+            border-radius: 10px;
+            align-items: flex-start;
+            box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+        }
+
+        .contenedor img {
+            width: 336px;
+            height: 152px;
+            position: relative;
+            top: 16px;
+            left: 16px;
+            border-radius: 10px;
+            margin-bottom: 16px;
+        }
+
+        .etiqueta {
+            border-radius: 10px;
+            font-size: var(--s);
+            color: var(--morado-de-letras);
+            background-color: var(--fondo-desing);
+            width: 50px;
+            text-align: center;
+            position: relative;
+            font-weight: 500;
+            left: 16px;
+            margin-bottom: 0px;
+        }
+
+        .parrafo {
+            position: relative;
+            left: 16px;
+            margin-top: 0px;
+            width: 336px;
+        }
+
+        .parrafo h1 {
+            font-size: var(--xl);
+            color: var(--titulo);
+            margin-top: 16px;
+            margin-bottom: 0px;
+        }
+
+        .parrafo p {
+            margin-top: 6px;
+            font-size: var(--l);
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+
+        .linea-de-color {
+            background-color: var(--letras);
+            color: var(--cart);
+            height: 1px;
+            width: 368px;
+            margin-top: 0px;
+            margin-bottom: 20px;
+        }
+
+        .nombre {
+            width: 336px;
+            font-size: var(--s);
+            position: relative;
+            left: 16px;
+            font-weight: 200;
+            margin-top: 0px;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <img src="./cactus_img.jpg" alt="imagen cactus">
+            <p class="etiqueta">Desing</p>
+            <div class="parrafo">
+                <h1>Embracing Minimalism</h1>
+                <p>from minimalist sculptures to minimalist paintings, this blos will inspire you to appreciate the beaty that lies in simplicity.</p>
+            </div>
+
+        <div class="parrafo-dos">
+            <p class="linea-de-color">. </p>
+            <p class="nombre">Annie Spratt</p> 
+        </div>
+        
+        
+        <!-- <div class="contenedor-secundario">
+            
+        </div> -->
+    </div>
+    
+</body>
+</html>
